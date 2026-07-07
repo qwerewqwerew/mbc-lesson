@@ -1,0 +1,8 @@
+{
+  "permissions": {
+    "allow": [
+      "Read(//e/program/VSCode/data/user-data/User/**)",
+      "Read(//e/program/VSCode/data/**)"
+    ]
+  }
+}
