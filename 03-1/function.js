@@ -7,10 +7,31 @@ function 명명함수(params) {
 //2.익명함수
 //2-1.표현식함수
 
-const 표현식함수 = function (m1,m2) {
-  document.write(`오늘 점심은:${m1}과 ${m2}야`)
+const 표현식함수 = function (m1, m2) {
+  document.write(`오늘 점심은:${m1}과 ${m2}야 <br>`);
 };
-표현식함수('떡볶이','순대');
+표현식함수("떡볶이", "순대");
+표현식함수("라면", "김밥");
 
 //2-2.즉시실행함수
-//2-2.화살표함수
+
+(function (a, b) {
+  document.write(`<h1>즉시실행함수?????</h1><hr>
+    ${a + b}`);
+})(1, 2);
+
+//2-3.화살표함수
+
+//const 화살표함수 = function () {
+//const 화살표함수 = () => {  //1단변신
+const 화살표함수 = () => document.write(`화살표함수 <br>`);
+화살표함수();
+
+const sum = (a, b) => {
+  console.log(a + b);
+  return;
+};
+
+sum(50, 10);
+
+
