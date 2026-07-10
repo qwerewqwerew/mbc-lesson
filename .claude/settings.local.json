@@ -2,7 +2,11 @@
   "permissions": {
     "allow": [
       "Read(//e/program/VSCode/data/user-data/User/**)",
-      "Read(//e/program/VSCode/data/**)"
+      "Read(//e/program/VSCode/data/**)",
+      "Skill(schedule)",
+      "PowerShell(Register-ScheduledTask *)",
+      "PowerShell(Get-ScheduledTask *)",
+      "PowerShell(powershell.exe -NoProfile -ExecutionPolicy Bypass -File \"D:\\\\GPT\\\\web\\\\html\\\\auto-push.ps1\")"
     ]
   }
 }
