@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="ko">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+
+<body>
+  <h1>객체선언</h1>
+  <pre>
+    literal: 프로그래밍에서 약속된 표기법
+    {} -> Object Literal
+    new Object() -> 생성자 함수
+  </pre>
+  <script>
+    let mango = new Object();
+    console.log(mango);
+    mango = {
+      이름: '망고',
+      나이: '4살',
+      병원가기: function (a) { document.write(`<${a}>병원에 가요 </${a}><hr>`) },
+      놀이: function (a) {document.write(`${a}를 하고 놀아요<hr>`) }
+    }
+    document.write(`<h1>${mango.이름}</h1>`)
+    mango.병원가기('h2')
+  </script>
+</body>
+
+</html>
