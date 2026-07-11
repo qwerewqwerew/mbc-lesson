@@ -27,4 +27,5 @@ const uusers = [
   { id: 2, name: "영희" },
   { id: 3, name: "민수" },
 ];
-const user
+const use2 = uusers.filter((ewe) => ewe.id === 2);
+console.log(use2);
